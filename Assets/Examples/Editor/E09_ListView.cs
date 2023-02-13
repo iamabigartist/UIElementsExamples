@@ -35,8 +35,8 @@ namespace UIElementsExamples
         {
             listView.selectionType = SelectionType.Multiple;
 
-            listView.onItemChosen += obj => Debug.Log(obj);
-            listView.onSelectionChanged += objects => Debug.Log(objects);
+            listView.onItemsChosen += obj => Debug.Log(obj);
+            listView.onSelectionChange += objects => Debug.Log(objects);
 
             listView.style.flexGrow = 1f;
             listView.style.flexShrink = 0f;
@@ -110,7 +110,7 @@ namespace UIElementsExamples
                 xmlListView.itemsSource = items;
                 xmlListView.makeItem = makeItem;
                 xmlListView.bindItem = bindItem;
-                root.schedule.Execute(() => { xmlListView.Refresh(); });
+                root.schedule.Execute(() => { xmlListView.Rebuild(); });
                 AddListView(xmlListView);
             }
         }

@@ -6,6 +6,19 @@ using UnityEngine.UIElements;
 
 namespace UIElementsExamples
 {
+    public class TestManipulator : PointerManipulator
+    {
+
+        protected override void RegisterCallbacksOnTarget()
+        {
+            throw new NotImplementedException();
+        }
+        protected override void UnregisterCallbacksFromTarget()
+        {
+            throw new NotImplementedException();
+        }
+    }
+     
     public class E20_DragAndDrop : EditorWindow
     {
         [MenuItem("UIElementsExamples/20_DragAndDrop")]

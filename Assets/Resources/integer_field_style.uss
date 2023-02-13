@@ -1,0 +1,3 @@
+.my-integer-field TextElement {
+    color: rgba(255, 0, 0, 255);
+}
